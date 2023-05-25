@@ -99,10 +99,51 @@ header .logo {
   border-left: 4px solid red;
   margin-left: 2rem;
 }
+header nav {
+  display: none;
+}
+header nav span {
+  z-index: 3;
+}
+header nav ul {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: black;
+  z-index: 2;
+}
+@media screen and (min-width: 900px) {
+  header nav ul {
+    width: 25%;
+  }
+}
+header nav ul li {
+  flex-basis: 15%;
+  width: 100%;
+  border-bottom: 1px dotted rgba(140, 3, 3, 0.5490196078);
+}
+header nav ul li:nth-of-type(1) {
+  border-top: 1px dotted rgba(140, 3, 3, 0.5490196078);
+}
+header nav ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 30px;
+}
+header .nav-display-block {
+  display: block;
+}
 header .material-icons {
   font-size: 6rem;
   position: absolute;
-  top: 3rem;
+  top: 5rem;
   right: 3rem;
   cursor: pointer;
 }
@@ -165,6 +206,7 @@ header video {
 
 section {
   padding-top: 30px;
+  height: 100vh;
 }
 
 h2 {

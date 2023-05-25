@@ -51,10 +51,55 @@ header {
         margin-left: 2rem;
     }
 
+    nav {
+        display: none;
+
+        span {
+            z-index: 3;
+        }
+
+        ul{
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50%;
+            @media screen and (min-width: 900px) {
+                width: 25%;
+            }
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: black;
+            z-index: 2;
+
+            li{
+                flex-basis: 15%;
+                width: 100%;
+                border-bottom: 1px dotted $color1;
+                &:nth-of-type(1) {
+                    border-top: 1px dotted $color1;
+                }
+
+                a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100%; 
+                    font-size: 30px;               
+                }
+            }
+        }
+    }
+
+    .nav-display-block {
+        display: block;
+    }
+
     .material-icons {
         font-size: 6rem;
         position: absolute;
-        top: 3rem;
+        top: 5rem;
         right: 3rem;
         cursor: pointer;
     }
@@ -123,6 +168,7 @@ header {
 
 section {
     padding-top: 30px;
+    height: 100vh;
 }
 
 h2 {
