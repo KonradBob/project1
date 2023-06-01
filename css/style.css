@@ -88,7 +88,6 @@ header .top {
   height: 6rem;
   display: flex;
   align-items: center;
-  z-index: 1;
   color: #fff;
   font-size: 400%;
 }
@@ -98,6 +97,10 @@ header .logo {
   padding-left: 2rem;
   border-left: 4px solid red;
   margin-left: 2rem;
+  z-index: 2;
+}
+header span {
+  z-index: 2;
 }
 header nav {
   display: none;
