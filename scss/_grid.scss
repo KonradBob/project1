@@ -29,8 +29,40 @@
     padding: 2 * $grid-base;
 
     &-md50 {
-        @media screen and (min-width: 740px) {
+        @media screen and (min-width: $bp-md) {
             flex: 0 0 50%;
         } 
     }
+
+    &-md33 {
+        @media screen and (min-width: $bp-md) {
+            flex: 0 0 33.333333%;
+        } 
+    }
+
+    &-md25 {
+        @media screen and (min-width: $bp-md) {
+            flex: 0 0 25%;
+        } 
+    }
+
+    &-lg50 {
+        @media screen and (min-width: $bp-lg) {
+            flex: 0 0 50%;
+        } 
+    }
+    
+    &-lg33 {
+        @media screen and (min-width: $bp-lg) {
+            flex: 0 0 33.333333%;
+        } 
+    }
+    
+    &-lg25 {
+        @media screen and (min-width: $bp-lg) {
+            flex: 0 0 25%;
+        } 
+    }
+
+
 }
